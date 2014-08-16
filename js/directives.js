@@ -94,6 +94,15 @@ app.directive('meteojour', ["dateFilter", "$interval", "MeteoJ",
                     scope.meteoJ = MeteoJ;
                 });
 
+                interval = $interval(function() {
+                    scope.meteoJ = {};
+                    var promise = MeteoJ.getMeteoJ(scope.ville);
+
+                    promise.then(function(MeteoJ) {
+                        scope.meteoJ = MeteoJ;
+                    });
+                }, 60000); //appelle de la fonction toute les heures 
+
 
             }
         }
@@ -133,6 +142,23 @@ app.directive('meteos', ["dateFilter", "$interval", "Meteo",
                     }
 
                 });
+
+                interval = $interval(function() {
+                    if (scope.meteodujour == false) {
+                        scope.nbrjours++;
+                    }
+                    var promise = Meteo.getMeteo(scope.ville, scope.nbrjours);
+
+                    promise.then(function(Meteo) {
+
+                        scope.meteos = Meteo;
+
+                        if (scope.meteodujour == false) {
+                            Meteo.list.splice(0, 1);
+                        }
+
+                    });
+                }, 60000); //appelle de la fonction toute les heures 
 
             }
         }

@@ -6,11 +6,11 @@ J'ai réalisé quelques directives angularjs pour afficher les éléments d'un d
 
 ##Les différentes directives crées : 
 
-  <horloge></horloge>
- 	affiche l'horloge
+ <horloge></horloge>
+ 	Affiche l'horloge
 
  <date></date>
- 	affiche la date du jour
+ 	Affiche la date du jour
 
  <meteojour ville="grenoble" icones=icones></meteojour>
   	Avec comme attribut 
