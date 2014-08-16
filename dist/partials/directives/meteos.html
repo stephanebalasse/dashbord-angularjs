@@ -1,0 +1,26 @@
+<div ng-repeat="meteo in meteos.list">
+	
+	<span class='meteo' >
+
+		<img src="images/loading.gif" alt="" class="chargement" ng-show="!meteo.dt"/>
+
+		<div ng-hide="!meteo.dt">
+			<h2 class='jourMeteo'>{{ meteo.dt * 1000 | date : 'EEEE' | capitalize }} à {{ meteo.dt * 1000 | date : 'HH' }}H{{  meteo.dt * 1000 | date : 'mm' }} </h2>
+			<span class='tempJ'>{{ meteo.temp.day | number:0}} °</span>
+			<span class='temp'>
+				<span class='max'>{{ meteo.temp.max | number:0}} °</span>
+				<span class='min'>{{ meteo.temp.min | number:0}} °</span>
+			</span>
+			<img class='imageMeteo' src ='images/{{ icones[meteo.weather[0].icon] }}' alt ='{{ meteo.weather[0].icon }}' />
+			<span class='libMeteo'>{{ meteo.weather[0].description | capitalize }}</span>
+			<img class='vent' src ='images/ventM.png' alt ='chaussetteVent' />
+			<span class='ventLib'>{{ meteo.speed | number:1}} km/h</span>
+			<img class='sensVent' src='' alt='' />
+			<span class='separ'></span>
+			<img class='humidite' src='images/goutteP.png' alt='humidite' />
+			<span class='humidLib'>{{ meteo.humidity | number:0}} %</span>
+		</div>
+
+	</span>
+	
+</div>

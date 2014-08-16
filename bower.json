@@ -1,0 +1,22 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "authors": [
+    "Stephane Balasse <stephane.balasse@gmail.com>"
+  ],
+  "description": "Tableau de bord angularJs",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-i18n": "~1.2.21",
+    "angular": "~1.2.21"
+  }
+}

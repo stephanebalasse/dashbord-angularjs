@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" ng-app="dashboard">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Mon tableau de bord</title>
+    <link rel="stylesheet" href="css/min.css">
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller="tableaudeBord">
+
+    <horloge></horloge>
+
+    <date></date>
+
+    <meteojour ville="la murette" icones=icones></meteojour>
+
+    <meteos ville="la murette" nbrjours="4" meteodujour="false" icones=icones></meteos>
+    <script src="js/min.js"></script>
+</body>
+
+</html>
