@@ -1,16 +1,16 @@
-Tableau de bord html 5 Css 3 et angularjs
+#Tableau de bord html 5 Css 3 et angularjs
 ===
 
 J'ai réalisé quelques directives angularjs pour afficher les éléments d'un dashboard de domotique
 
 
-Les différentes directives crées : 
+##Les différentes directives crées : 
 
- * <horloge></horloge>
+ * ###horloge
 
- * <date></date>
+ * ###date
 
- * <meteojour ville="grenoble" icones=icones></meteojour>
+ * ###meteojour 
   	Avec comme attribut 
  		ville qui prend le nom de la ville qui sera passé en paramètre à la requete ajax vers openweathermap 
  		icones qui prend comme valeur un tableau d'images pour la météo
