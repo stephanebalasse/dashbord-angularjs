@@ -65,7 +65,7 @@ app.directive('date', ["dateFilter", "$interval",
                     scope.jour = dateFilter(date, 'dd');
                     scope.mois = dateFilter(date, 'MMMM');
                     scope.annee = dateFilter(date, 'yyyy');
-                }, 60000); //appelle de la fonction toute les heures 
+                }, 60000); //appelle de la fonction toute les minutes 
 
             }
         }
@@ -101,7 +101,7 @@ app.directive('meteojour', ["dateFilter", "$interval", "MeteoJ",
                     promise.then(function(MeteoJ) {
                         scope.meteoJ = MeteoJ;
                     });
-                }, 60000); //appelle de la fonction toute les heures 
+                }, 3600000); //appelle de la fonction toute les heures 
 
 
             }
@@ -158,7 +158,7 @@ app.directive('meteos', ["dateFilter", "$interval", "Meteo",
                         }
 
                     });
-                }, 60000); //appelle de la fonction toute les heures 
+                }, 3600000); //appelle de la fonction toute les heures 
 
             }
         }
