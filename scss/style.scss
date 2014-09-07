@@ -9,11 +9,11 @@
 }
 @font-face {
     font-family: "digital";
-    src: url('fonts/../../polices/DS-DIGI.ttf') format('truetype');
+    src: url('../polices/DS-DIGI.ttf') format('truetype');
 }
 @font-face {
     font-family: "digitalB";
-    src: url('fonts/../../polices/DS-DIGIB.ttf') format('truetype');
+    src: url('../polices/DS-DIGIB.ttf') format('truetype');
 }
 /*------------------------------------*\
    				horloge
@@ -21,7 +21,7 @@
 
 horloge {
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 0px;
     text-align: center;
 }
@@ -47,7 +47,7 @@ horloge {
 
 date {
     position: absolute;
-    right: 20px;
+    left: 20px;
     top: 230px;
     text-align: center;
     font-size: 50px;
@@ -77,6 +77,7 @@ meteojour .meteo, meteos .meteo {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 10px;
+    margin-top: 300px;
 }
 meteojour .meteo .jourMeteo, meteos .meteo .jourMeteo {
     display: inline-block;
