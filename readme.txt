@@ -27,3 +27,5 @@ J'ai réalisé quelques directives angularjs pour afficher les éléments d'un d
  		icones qui prend comme valeur un tableau d'images pour la météo
  	
  	Affiche la météo de la semaine
+
+Rendu : http://labs.les-cles-informatiques.com/angularjs/
