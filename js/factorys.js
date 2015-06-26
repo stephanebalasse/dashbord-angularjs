@@ -9,7 +9,7 @@ app.factory('MeteoJ', ["$http", "$q",
                         q: ville, // Les donnees que l'on souhaite envoyer au serveur au format JSON
                         mode: 'json',
                         units: 'metric',
-                        lang: 'fr',
+                        lang: 'fr'
                     }
                 }).success(function(data, status) {
                     factory.meteoJ = data;
@@ -42,7 +42,7 @@ app.factory('Meteo', ["$http", "$q",
                 }).success(function(data, status) {
                     factory.meteo = data;
                     deferred.resolve(factory.meteo);
-                }).error(function(data, status) {;
+                }).error(function(data, status) {
                     deferred.reject('Impossible de récuperrer la méteo');
                 });
                 return deferred.promise;

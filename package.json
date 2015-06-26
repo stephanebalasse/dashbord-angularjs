@@ -1,27 +1,27 @@
 {
-  "name": "dashboard",
-  "version": "1.0.0",
-  "description": "Tableau de board angularJs",
-  "main": "gulpfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^3.8.7",
-    "gulp-clean": "^0.3.1",
-    "gulp-compass": "^1.2.0",
-    "gulp-if": "^1.2.4",
-    "gulp-imagemin": "^0.6.2",
-    "gulp-livereload": "^2.1.0",
-    "gulp-minify-css": "^0.3.7",
-    "gulp-plumber": "^0.6.4",
-    "gulp-rimraf": "^0.1.0",
-    "gulp-uglify": "^0.3.1",
-    "gulp-useref": "^0.6.0",
-    "gulp-zip": "^1.0.0",
-    "imagemin-pngcrush": "^0.1.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Stéphane Balasse",
-  "license": "ISC"
+    "name": "dashboard",
+    "version": "1.0.0",
+    "description": "Tableau de board angularJs",
+    "main": "gulpfile.js",
+    "dependencies": {},
+    "devDependencies": {
+        "gulp": "^3.8.7",
+        "gulp-clean": "^0.3.1",
+        "gulp-compass": "^1.2.0",
+        "gulp-if": "^1.2.4",
+        "gulp-imagemin": "^0.6.2",
+        "gulp-livereload": "^2.1.0",
+        "gulp-minify-css": "^0.3.7",
+        "gulp-plumber": "^0.6.4",
+        "gulp-rimraf": "^0.1.0",
+        "gulp-uglify": "^0.3.1",
+        "gulp-useref": "^0.6.0",
+        "gulp-zip": "^1.0.0",
+        "imagemin-pngcrush": "^0.1.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Stéphane Balasse",
+    "license": "ISC"
 }
